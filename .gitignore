@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies
+node_modules
+.pnp
+.pnp.*
+
+# Build output
+dist
+dist-ssr
+*.local
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local env
+.env
+.env.*
+!.env.example
+
+# Project-local data (not a temp cache; keep out of version control)
+.codebuddy
+
+# Tool caches
+.playwright-cli
+
+# Independent sub-projects (not part of the root blog site)
+endfield
+mmd-toon-test
