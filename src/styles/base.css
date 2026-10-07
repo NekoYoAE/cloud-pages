@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: kozuka-gothic-pr6n, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", メイリオ, sans-serif;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+  background-color: #000;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+}
+
+input,
+textarea,
+[data-selectable] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+
+body {
+  position: relative;
+}
+
+body[data-modal="true"] {
+  overflow-y: hidden;
+}
+
+img,
+svg,
+canvas {
+  max-width: 100%;
+  vertical-align: top;
+
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  appearance: none;
+  user-select: all;
+  outline: none;
+  border: none;
+}
+
+svg {
+  display: block;
+}
+
+[data-media="max-xl"] {
+  display: none;
+}
+@media only screen and (min-width: 950px) {
+  [data-media="max-xl"] {
+    display: block;
+  }
+}
+
+[data-media="max-md"] {
+  display: none;
+}
+@media only screen and (min-width: 769px) {
+  [data-media="max-md"] {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  [data-media="min-xl"] {
+    display: none;
+  }
+}
+@media not screen and (min-width: 950px) {
+  [data-media="min-xl"] {
+    display: block;
+  }
+}
+
+[data-media="min-md"] {
+  display: none;
+}
+@media not screen and (min-width: 769px) {
+  [data-media="min-md"] {
+    display: block;
+  }
+}
+
+[data-media="max-xl-inline"] {
+  display: none;
+}
+@media only screen and (min-width: 950px) {
+  [data-media="max-xl-inline"] {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  [data-media="min-xl-inline"] {
+    display: none;
+  }
+}
+@media not screen and (min-width: 950px) {
+  [data-media="min-xl-inline"] {
+    display: inline;
+  }
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
