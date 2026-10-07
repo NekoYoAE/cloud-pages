@@ -38,6 +38,11 @@ dist-ssr
 # Tool caches
 .playwright-cli
 
+# Wrangler
+.wrangler
+.wrangler-out
+.dev.vars
+
 # Independent sub-projects (not part of the root blog site)
 endfield
 mmd-toon-test
